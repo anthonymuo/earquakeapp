@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171218183249) do
+ActiveRecord::Schema.define(version: 20171219004757) do
+
+  create_table "all_eartquakes", force: :cascade do |t|
+    t.time "time"
+    t.float "latitude"
+    t.float "longitude"
+    t.decimal "depth"
+    t.decimal "mag"
+    t.decimal "magType"
+    t.integer "nst"
+    t.decimal "gap"
+    t.decimal "dmin"
+    t.decimal "rms"
+    t.string "net"
+    t.string "place"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "feeds", force: :cascade do |t|
     t.string "Description"
