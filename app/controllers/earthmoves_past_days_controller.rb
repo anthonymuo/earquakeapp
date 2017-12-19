@@ -61,6 +61,13 @@ class EarthmovesPastDaysController < ApplicationController
     end
   end
 
+  def import 
+    EarthmovesPastDay.import(params[:file])
+    redirect_to earthmoves_past_days_path, notice: "earthmoves_past_days Added successfully"
+  end
+
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_earthmoves_past_day

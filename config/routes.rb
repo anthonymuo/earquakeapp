@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
  
-  resources :earthmoves_past_days
+  resources :earthmoves_past_days do 
+  	collection { post :import }
+   end 
+
+
  root 'pages#home'
  
   get 'pages/about'
