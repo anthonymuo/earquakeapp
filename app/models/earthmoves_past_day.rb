@@ -1,0 +1,2 @@
+class EarthmovesPastDay < ApplicationRecord
+end

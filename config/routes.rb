@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
  
+  resources :earthmoves_past_days
  root 'pages#home'
  
   get 'pages/about'

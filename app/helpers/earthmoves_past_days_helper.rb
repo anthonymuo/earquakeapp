@@ -1,0 +1,2 @@
+module EarthmovesPastDaysHelper
+end

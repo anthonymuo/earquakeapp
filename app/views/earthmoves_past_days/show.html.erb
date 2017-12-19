@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @earthmoves_past_day.time %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @earthmoves_past_day.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @earthmoves_past_day.longitude %>
+</p>
+
+<p>
+  <strong>Depth:</strong>
+  <%= @earthmoves_past_day.depth %>
+</p>
+
+<p>
+  <strong>Mag:</strong>
+  <%= @earthmoves_past_day.mag %>
+</p>
+
+<%= link_to 'Edit', edit_earthmoves_past_day_path(@earthmoves_past_day) %> |
+<%= link_to 'Back', earthmoves_past_days_path %>
